@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <!-- Хедер -->
+    <!-------------Хедер-------------->
     <header class="page-header">
       <div class="container page-header-container">
         <nav class="main-nav">
@@ -60,7 +60,7 @@
       </div>
     </header>
     <main>
-      <!-- перша секція -->
+      <!---------------------перша секція----------------->
       <section class="section-one">
         <div class="container">
           <h1 class="title-section-one">
@@ -71,7 +71,7 @@
           </button>
         </div>
       </section>
-      <!-- друга секція функції-->
+      <!-- -----------------друга секція функції-------------->
       <section class="section-two">
         <div class="container">
           <h2 class="visually-hidden">Features</h2>
@@ -147,7 +147,7 @@
           </ul>
         </div>
       </section>
-      <!-- третя сеція наша команда -->
+      <!----------------------третя сеція наша команда-------------------->
       <section class="section-three">
         <div class="container">
           <h2 class="title-section-three">Our Team</h2>
@@ -438,7 +438,7 @@
           </ul>
         </div>
       </section>
-      <!-- четверта секція наше портфоліо-->
+      <!------------четверта секція наше портфоліо-------------->
       <section class="section-four">
         <div class="container section-four-container">
           <h2 class="title-section-four">Our Portfolio</h2>
@@ -561,7 +561,7 @@
         </div>
       </section>
     </main>
-    <!-- футер -->
+    <!----------------------------футер------------------->
     <footer class="footer-one">
       <div class="container footer-two">
         <div class="footer-three">
@@ -630,6 +630,7 @@
         </div>
       </div>
     </footer>
+    <!----------------------Модальне вікно------------>
     <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-close-btn">
@@ -646,6 +647,73 @@
             ></use>
           </svg>
         </button>
+        <p class="review-form-description">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="review-form">
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-name">Name</label>
+            <input
+              class="review-form-input"
+              id="user-name"
+              name="user-name"
+              type="text"
+              pattern="[a-zA-Zа-яА-яЇїЄєҐ']+"
+              title="Yelyzaveta"
+              required
+            />
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="-field-label" for="user-email">Email</label>
+            <input
+              class="review-form-input"
+              id="user-email"
+              name="user-email"
+              type="email"
+              required
+            />
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-tel">Phone</label>
+            <input
+              class="review-form-input"
+              id="user-tel"
+              name="user-tel"
+              type="tel"
+              pattern="[0-9]{3}-[0-9{3}-[0-9]{2}-[0-9]{2}]"
+              title="xxx-xxx-xx-xx"
+              required
+            />
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-comment"
+              >Comment</label
+            >
+            <textarea
+              class="review-form-comment"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+              required
+            ></textarea>
+          </div>
+          <div class="review-form-checkbox-wrapper">
+            <label class="review-form-checkbox-label" for="user-privasy"
+              >I accept the terms and conditions of the
+              <a href="">Privacy Policy</a></label
+            >
+            <input
+              class="review-form-checkbox"
+              id="user-privasy"
+              name="user-privasy"
+              value="true"
+              type="checkbox"
+              required
+            />
+
+            <button class="review-form-submit-btn" type="submit">Send</button>
+          </div>
+        </form>
       </div>
     </div>
   </body>
