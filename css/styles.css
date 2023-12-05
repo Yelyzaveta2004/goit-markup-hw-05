@@ -554,17 +554,14 @@ body {
   justify-content: center;
   line-height: 0;
   stroke: #2e2f42;
-  /*transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border:250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-  stroke: #ffffff;
   background-color: #404bbf;
   fill: #ffffff;
+  border: none; 
 }
 .modal-close-btn-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
