@@ -730,21 +730,32 @@
             ></textarea>
           </div>
           <div class="review-form-checkbox-wrapper">
-            <label class="review-form-checkbox-label" for="user-privasy"
-              >I accept the terms and conditions of the
-              <a href="">Privacy Policy</a></label
-            >
             <input
-              class="review-form-checkbox"
+              class="review-form-checkbox visually-hidden"
               id="user-privasy"
               name="user-privasy"
               value="true"
               type="checkbox"
               required
             />
-
-            <button class="review-form-submit-btn" type="submit">Send</button>
+            <label class="review-form-checkbox-label" for="user-privasy">
+              <span class="review-form-own-checkbox">
+                <svg class="review-form-own-checkbox-icon">
+                  <use
+                    href="./images/icons.svg#icon-chekmark"
+                    width="10"
+                    height="9"
+                    aria-label="checkmark icon"
+                  ></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href=""
+                ><span class="different-color">Privacy Policy</span></a
+              ></label
+            >
           </div>
+          <button class="review-form-submit-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
